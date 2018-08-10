@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'skin', component: SkinComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'list', component: ListComponent },  
+  { path: 'list', component: ListComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -29,8 +29,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes // <-- debugging purposes only
     )
   ],
   providers: [],

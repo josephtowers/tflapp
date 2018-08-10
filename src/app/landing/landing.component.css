@@ -1,0 +1,21 @@
+/*Landing container style*/
+.landing-container {
+  background-color: #343434;
+  height: calc(100vh - 120px);
+  padding-left:120px;
+  overflow: hidden;
+}
+
+.highlight-quote {
+  color: white;
+  font-family: ITC Souvenir;
+  font-size: 2.7em;
+}
+
+.custom-button {
+   height: 45px;
+   width: 140px;
+   border: 1px solid #707070;
+   color: white;
+   font-size: 18px;
+}
