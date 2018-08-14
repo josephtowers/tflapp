@@ -1,0 +1,20 @@
+
+strong {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 43px;
+}
+
+.skin-desc::-webkit-scrollbar {
+    width: 6px;
+    background-color:transparent;
+} 
+
+.skin-desc::-webkit-scrollbar-thumb {
+    background-color: #343434;
+    border-radius: 10px
+}

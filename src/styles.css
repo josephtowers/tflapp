@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Futura PT;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #343434 !important;
+}
