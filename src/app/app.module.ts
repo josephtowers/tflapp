@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { SkinComponent } from './skin/skin.component';
 import {RoundProgressModule} from 'angular-svg-round-progressbar';
 
+
 const appRoutes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'skin', component: SkinComponent },

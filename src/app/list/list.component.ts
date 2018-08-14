@@ -28,7 +28,9 @@ export class ListComponent implements OnInit {
           });
             TweenMax.to('.first-column ', 1, { opacity: 0, x: '-200vw'});
             TweenMax.to('.featured-item', 1, {opacity: 0, x: '200vw',
-            onComplete: () => {router.navigateByUrl('/skin', { skipLocationChange: true }); }});
+            onComplete: () => {
+              $('a.getskin')[0].click()
+             }});
           })
         })
       }
