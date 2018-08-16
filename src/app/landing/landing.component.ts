@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TweenMax } from 'gsap';
+import { TweenMax, Ease } from 'gsap';
 import { TimelineMax, Circ } from 'gsap';
 import * as $ from 'jquery';
 @Component({
@@ -33,6 +33,14 @@ export class LandingComponent implements OnInit {
             }
           });
         }
+      });
+      $('.goToAbout').on('click', () => {
+        t1.to('.firstone', 1, { opacity: 0, x: '-1000vw', ease: Circ.easeIn });
+      TweenMax.to('img', 1, { opacity: 0, x: '1000vw', ease: Circ.easeIn, onComplete: () => {
+        TweenMax.to('.landing-container', 0.5, {y: '-1000vh', ease: Circ.easeOut, onComplete: () => {
+          $('.about-route')[0].click()
+        }})
+      } });
       });
     });
   }

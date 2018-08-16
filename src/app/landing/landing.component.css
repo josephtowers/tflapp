@@ -1,9 +1,13 @@
 /*Landing container style*/
 .landing-container {
   background-color: #343434;
-  height: calc(100vh - 120px);
+  height: 100vh;
   padding-left:120px;
   overflow: hidden;
+}
+nav {
+  height: 120px;
+  padding: 0 120px;
 }
 
 .highlight-quote {
